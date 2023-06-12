@@ -3,6 +3,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { SqsModule } from '@ssut/nestjs-sqs';
 import { AWSModule } from './aws.module';
+import { config } from 'dotenv';
+config();
 
 @Module({
   imports: [
